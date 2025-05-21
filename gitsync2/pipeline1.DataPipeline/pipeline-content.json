@@ -1,0 +1,37 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "name": "Set variable1",
+        "type": "SetVariable",
+        "dependsOn": [],
+        "policy": {
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "variableName": "var2",
+          "value": {
+            "value": "@pipeline().libraryVariables.fromvarlibrary",
+            "type": "Expression"
+          }
+        }
+      }
+    ],
+    "variables": {
+      "va": {
+        "type": "String"
+      },
+      "var2": {
+        "type": "String"
+      }
+    },
+    "libraryVariables": {
+      "fromvarlibrary": {
+        "type": "String",
+        "variableName": "var1",
+        "libraryName": "library1"
+      }
+    }
+  }
+}
