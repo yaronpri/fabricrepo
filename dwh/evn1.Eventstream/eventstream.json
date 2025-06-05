@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "id": "75335d2a-3d73-4f89-8497-b34d784fde5c",
+      "name": "test",
+      "type": "SampleData",
+      "properties": {
+        "type": "Bicycles"
+      }
+    }
+  ],
+  "destinations": [],
+  "streams": [
+    {
+      "id": "76c55bd5-bc96-484d-8af4-9cfe397f9be7",
+      "name": "evn1-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "test"
+        }
+      ]
+    }
+  ],
+  "operators": [],
+  "compatibilityLevel": "1.0"
+}
